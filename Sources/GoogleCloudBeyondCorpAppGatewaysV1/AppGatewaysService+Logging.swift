@@ -62,14 +62,14 @@ extension Clients {
 
     public func listAppGateways(
       request: ListAppGatewaysRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBeyondcorpAppgatewaysV1.ListAppGatewaysResponse {
+    ) async throws -> GoogleCloudBeyondCorpAppGatewaysV1.ListAppGatewaysResponse {
       try await self._intercept(
         request: request,
         options: options,
         name: "listAppGateways",
         action: {
           (r: ListAppGatewaysRequest, o: GoogleCloudGax.RequestOptions) async throws
-            -> GoogleCloudBeyondcorpAppgatewaysV1.ListAppGatewaysResponse
+            -> GoogleCloudBeyondCorpAppGatewaysV1.ListAppGatewaysResponse
           in
           return try await self.inner.listAppGateways(request: r, options: o)
         })
@@ -77,14 +77,14 @@ extension Clients {
 
     public func getAppGateway(
       request: GetAppGatewayRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBeyondcorpAppgatewaysV1.AppGateway {
+    ) async throws -> GoogleCloudBeyondCorpAppGatewaysV1.AppGateway {
       try await self._intercept(
         request: request,
         options: options,
         name: "getAppGateway",
         action: {
           (r: GetAppGatewayRequest, o: GoogleCloudGax.RequestOptions) async throws
-            -> GoogleCloudBeyondcorpAppgatewaysV1.AppGateway
+            -> GoogleCloudBeyondCorpAppGatewaysV1.AppGateway
           in
           return try await self.inner.getAppGateway(request: r, options: o)
         })
